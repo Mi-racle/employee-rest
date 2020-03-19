@@ -28,8 +28,9 @@ import org.springframework.stereotype.Component;
 class DatabaseLoader {
 
 	/**
-	 * Use Spring to inject a {@link EmployeeRepository} that can then load data. Since this will run only after the app
-	 * is operational, the database will be up.
+	 * Use Spring to inject a {@link EmployeeRepository} that can then load data.
+	 * Since this will run only after the app is operational, the database will be
+	 * up.
 	 *
 	 * @param repository
 	 */

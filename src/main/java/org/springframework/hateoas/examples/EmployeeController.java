@@ -15,7 +15,8 @@
  */
 package org.springframework.hateoas.examples;
 
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -50,8 +51,8 @@ class EmployeeController {
 	}
 
 	/**
-	 * Look up all employees, and transform them into a REST collection resource. Then return them through Spring Web's
-	 * {@link ResponseEntity} fluent API.
+	 * Look up all employees, and transform them into a REST collection resource.
+	 * Then return them through Spring Web's {@link ResponseEntity} fluent API.
 	 */
 	@GetMapping("/employees")
 	ResponseEntity<CollectionModel<EntityModel<Employee>>> findAll() {
@@ -86,8 +87,8 @@ class EmployeeController {
 	}
 
 	/**
-	 * Look up a single {@link Employee} and transform it into a REST resource. Then return it through Spring Web's
-	 * {@link ResponseEntity} fluent API.
+	 * Look up a single {@link Employee} and transform it into a REST resource. Then
+	 * return it through Spring Web's {@link ResponseEntity} fluent API.
 	 *
 	 * @param id
 	 */
