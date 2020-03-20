@@ -50,6 +50,7 @@ class Employee {
 	private Long id;
 	private String firstName;
 	private String lastName;
+	private String name;
 	private String role;
 
 	/**
@@ -64,5 +65,9 @@ class Employee {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.role = role;
+	}
+
+	public String getName(){
+		return firstName + " " + lastName;
 	}
 }
